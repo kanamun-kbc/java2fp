@@ -20,7 +20,7 @@ public class CalcBinary {
 		/*最終的に使われる2進数の計算結果long型変数*/
 		long bin = 0;
 		/*binに加える数値の桁調整用カウンタ変数*/
-		int i = 1;
+		long i = 1;
 		/*ten_mulを一桁ずつ論理シフトしていき0になるまで続ける*/
 		/*下の桁から順に見ていく*/
 		while(ten_mul>0) {
