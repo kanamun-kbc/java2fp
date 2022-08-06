@@ -96,9 +96,9 @@ public class TwosComplement {
 		}else if(num<0) {
 			for(int n=7;n>=0;n--) {
 				if(numArrayP[n]==0) {
-					out.print(" ×");
+					out.print("  ×");
 				}else if(numArrayP[n]==1) {
-					out.print(" ●");
+					out.print("  ●");
 				}
 			}
 		}
