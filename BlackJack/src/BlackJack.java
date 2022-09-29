@@ -122,7 +122,14 @@ public class BlackJack {
 		String hit = "";
 		do {
 			out.print("もう1枚引きますか?(Y(ヒット)/N(スタンド)):");
-			hit = sc.nextLine();
+			while(true) {
+				hit=sc.nextLine();
+				if(hit.equals("Y") || hit.equals("N")) {
+					break;
+				}else {
+					out.print("入力ミスです。もう1枚引きますか?(Y(ヒット)/N(スタンド)):");
+				}
+			}
 			if(hit.equals("Y")) {
 				while(true){
 		 			num1 = rand.nextInt(4);
